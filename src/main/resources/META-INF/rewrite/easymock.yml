@@ -4,5 +4,5 @@ name: org.openrewrite.java.testing.easymock.EasymockRemoveReplay
 displayName: Remove EasyMock `replay()`"
 description: Remove EasyMock `replay()` method calls.
 recipeList:
-  - org.openrewrite.java.migrate.RemoveMethodInvocation:
+  - org.openrewrite.java.RemoveMethodInvocations:
       methodPattern: org.easymock..EasyMock replay(..)
