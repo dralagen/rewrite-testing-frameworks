@@ -37,6 +37,8 @@ dependencies {
     implementation("org.openrewrite:rewrite-maven")
     implementation("org.openrewrite.recipe:rewrite-java-dependencies:$rewriteVersion")
     implementation("org.openrewrite.recipe:rewrite-static-analysis:$rewriteVersion")
+    // add explicit dependancy to rewrite-migrate-java to get recipe org.openrewrite.java.migrate.RemoveMethodInvocation
+    implementation("org.openrewrite.recipe:rewrite-migrate-java:2.26.1")
     runtimeOnly("org.openrewrite:rewrite-java-17")
 
     runtimeOnly("tech.picnic.error-prone-support:error-prone-contrib:latest.release:recipes")
